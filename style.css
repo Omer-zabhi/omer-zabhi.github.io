@@ -1,0 +1,734 @@
+/*html{
+  filter: invert(1) hue-rotate(180deg);
+}
+//
+img{
+  filter: invert(1) hue-rotate(180deg);
+}
+*/
+
+body{
+  background-color: #b5dadd;
+  overflow-x: hidden;
+  text-decoration: none;
+  font-size: 16px;
+  
+  
+}
+
+@font-face{
+  font-family: 'Gilroy-Light';
+  src: url(fonts/Gilroy-Light.otf);
+  font-family: 'Neo sans';
+  src: url(fonts/Neo\ Sans\ Std\ Light.otf);
+}
+
+.card {
+
+    box-shadow: 10px 4px 8px 0 rgba(56, 125, 216, 0.2);
+    background-color: #f39373   ;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    max-width: 250px;
+    
+  }
+  
+  .card:hover {
+    box-shadow: 10px 8px 16px 10px rgba(68, 107, 131, 0.4);
+
+  }
+
+
+  .card-image{
+    max-width: 250px;
+    align-self: center;
+    max-height: 180px;
+    background-color: rgba(36, 26, 26, 0.87);
+    overflow: hidden;
+    border-radius: 5%;
+
+  }
+  
+  .more {display: none;}
+
+  
+  .container, .card-text {
+    padding-left: 10px;
+    font-size: 15px;
+
+  }
+
+  .card-text{
+    font-style: italic;
+    font-weight: 300;
+    line-height: 17px;
+    max-width: 198px;
+    padding-bottom: 15px;
+    
+  }
+
+  .card button {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #799fad;
+    display: block;
+    position: absolute;
+    bottom: 8;
+  }  
+  
+  
+  /* mobile */
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .site-nav{
+    display: grid;
+    grid-template-columns: 4fr 6fr ;
+    text-decoration: none;
+    align-items: center;
+    font-family: Neo sans;  
+    padding-left: 12px ;
+    padding-top: 5px;
+    color: rgb(136, 5, 5);
+
+  }
+
+.site-nav a{
+  padding-right: 12px;
+  text-decoration: none;
+  color: rgb(53, 51, 51);
+  font-weight: bolder;
+  font-size: 16px;
+  
+
+}
+  
+
+#welcome{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-weight: lighter;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  align-items: center;
+  display: none;
+ 
+}
+
+.aboutus{
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  display: none;
+}
+
+#welcome1{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-weight: lighter;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  align-items: center;
+ 
+}
+
+.aboutus1{
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 13px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 15px;
+}
+
+
+#qualities{
+  display: grid;
+  padding: 70px 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 14px;    
+  position: relative;
+  animation: mymove 5s;
+  justify-content: center;
+
+}
+
+
+
+@keyframes mymove {
+
+  from {bottom: 60px;}
+  to {bottom: 100px;}
+}
+
+
+
+.quality{
+  padding:10px 2px;
+  grid-column: 1/10;
+  justify-content: center;
+}
+
+.expertise{
+  grid-column: 1/10;
+  padding: 20px 5px;
+  justify-content: center;
+}
+
+.tri{
+  grid-column: 1/10;
+  padding-left: 20px 5px;
+justify-content: center;
+}
+
+
+h2{
+  align-content: center;
+  padding: 20px 0px;
+  padding-left: 70px;
+  font-family: Neo sans;
+  color:  rgb(53, 51, 51);
+}
+
+
+  #products{
+    display: grid;
+    gap: 2em;
+    width: 100%;
+    overflow-x: scroll;
+    padding-top: 2px;
+    padding-bottom: 80px;
+    float: left;
+    scroll-behavior: smooth;
+    
+  }
+  #products::-webkit-scrollbar{
+    display: none;
+  }
+  #media::-webkit-scrollbar{
+    display: none;
+  }
+  
+  
+#packing{
+  padding-left: 10px;
+  padding-bottom: 80px;
+  
+}
+
+#packing .packaging{
+  grid-column: 1/10;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 22px;
+  letter-spacing: 1px;
+  font-style: italic;
+  width: 100%;
+  
+}
+
+#packing .specs{
+  grid-column: 1/10 ;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  padding-left: 5px;
+  width: 100%;
+  font-size: 15px;
+}
+ 
+@media only screen and (max-width: 900px){
+.specs h3{
+  font-style: Neo sans;
+  font-stretch: expanded;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 40px;
+  color: rgb(136, 5, 5);;
+}
+
+
+
+.footer .contact{
+  display: none;
+}
+
+
+
+.footer .mail{
+  grid-column: 1/10;
+  padding: 5px 15px;
+  line-height: 26px;
+}
+
+.footer .mail a{
+  color: rgb(136, 5, 5);;
+}
+
+.footer .certification{
+  padding-top: 30px;
+  padding-left: 10px;
+  grid-column: 1/10;
+}
+
+.certification img{
+  max-width: 160px;
+  max-height: 180px;
+}
+
+.footer .copyright{
+  grid-column: 1/10;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-family: Neo sans;
+}
+
+
+
+} 
+
+#media{
+  display: grid;
+  grid-column: 1/11;
+  gap: 2em;
+  width: 100%;
+  height: 30%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 70px; 
+  background-color: #799fad;
+  align-self: center;
+  
+}
+
+
+  
+
+
+#media div img{
+  border-radius: 13%;
+  max-width: 300px;
+  max-height: 200px;
+  padding: 40px 10px;
+  
+}
+
+
+#h2{
+  align-content: center;
+  padding-left: 70px;
+  font-family: Neo sans;
+  color:  rgb(53, 51, 51);
+  padding-top: 40px;
+  font-size: 22px;
+  max-height: 10px;
+}
+
+#locateus .specs{
+  grid-column: 1/10 ;
+  font-size: 16.5px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  padding-left: 8px;
+  width: 100%;
+}
+
+#locateus .specs h3{
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.specs h5{
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+
+#locateus .packaging1{
+  grid-column: 1/10;
+  font-size: 14.5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 22px;
+  letter-spacing: 1px;
+  font-style: italic;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  padding-left: 8px;
+
+}
+
+#locateus .packaging1 h3{
+  font-weight: bold;
+  font-size: 18px;
+ color: rgb(136, 5, 5);;
+}
+
+#locateus .packaging{
+  display: none;
+}
+
+.footer {
+  display: grid;
+  padding: 30px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14;
+  letter-spacing: 1px;
+  background-color: #799fad;
+  overflow-y: hidden;
+}
+
+
+/* laptop view */
+
+@media only screen and (min-width: 900px){
+
+  .site-nav{
+    padding-top: 30px;
+    padding-left: 100px;
+    font-size: larger;
+    color: rgb(136, 5, 5);;
+  }
+
+  .site-nav a{
+    float: right;
+    padding-right: 120px;
+    font-size: larger;
+  }
+  #welcome{
+    padding-top: 160px;
+    padding-bottom: 40px;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    align-items: center;
+    display: contents;
+    padding-left: 40px;
+  }
+  .aboutus {
+  
+    display: contents;
+    
+  }
+
+  .aboutus p{
+    padding-bottom: 40px;
+    font-size: larger;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;  
+    font-weight: 420;
+  }
+
+
+
+  #welcome1{
+   
+    display: none;
+   
+  }
+  
+  .aboutus1{
+   
+    display: none;
+  }
+
+  #qualities{
+    display: grid;
+    padding: 100px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 14px;    
+    position: relative;
+    animation: mymove 5s;
+
+  }
+ 
+  
+  
+  @keyframes mymove {
+  
+    from {bottom: 60px;}
+    to {bottom: 100px;}
+  }
+
+
+
+  .quality{
+    grid-column: 1/4;
+    padding-left: 100px;
+
+    justify-content: center;
+  }
+  
+  .expertise{
+    
+    padding: 0px 20px;
+    grid-column: 5/7;
+    justify-content: center;
+  }
+
+  .tri{
+    padding-left: 30px;
+  grid-column: 8/10;
+  justify-content: center;
+  }
+
+  h2, #h2{
+    align-self: center;
+    padding-left: 650px;
+    font-size: xx-large;
+    padding-bottom: 65px;
+    padding-top: 40px;
+  }
+#products{
+  padding-bottom: 130px;
+  padding-right: 10px;
+  column-gap: 50px;
+  scroll-behavior: smooth;
+}
+
+#pack{
+  padding-top: 600px;
+  align-self: center;
+  padding-left: 650px;
+}
+
+.card {
+
+  box-shadow: 10px 4px 8px 0 rgba(56, 125, 216, 0.2);
+  background-color: #f39373   ;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  max-width: 350px;
+
+  
+}
+
+.card-image{
+  max-width: 350px;
+  max-height: 240px;
+  size: cover;
+  background-color: rgba(36, 26, 26, 0.87);
+  
+}
+
+.card h3{
+  font-size: larger;
+  font-family: Arial Narrow Bold;
+  padding-left: 13px;
+}
+
+.card-text{
+  font-size: large;
+  padding-left: 14px;
+  font-weight: 370;
+  line-height: 27px;
+  padding-bottom: 23px;
+  max-width: 330px;
+  
+}
+.card button {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #799fad;
+  display: block;
+  position: absolute;
+  bottom: 8;
+ 
+  /*-webkit-line-clamp: 3;
+*/}
+
+.more {display: none;}
+
+#packing{
+  padding-left: 80px;
+  padding-bottom: 100px;
+  
+  
+}
+
+#packing .packaging{
+  grid-column: 1/6;
+  font-size: larger;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 35px;
+  letter-spacing: 1px;
+  font-style: italic;
+  
+}
+
+#packing .specs{
+  grid-column: 7/10 ;
+  font-size: larger;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding-left: 90px;
+  width: 100%;
+}
+
+#packing .specs h3{
+  font-family:Neo sans;
+  color: rgb(136, 5, 5);
+}
+
+
+#locateus{
+  padding-left: 80px;
+  padding-bottom: 120px;
+  
+}
+
+#locateus .packaging{
+  display: grid;
+  grid-column: 1/6;
+  font-size: larger;
+  font-family: Gilroy-light;
+  line-height: 35px;
+  letter-spacing: 1px;
+  display: grid contents;
+
+  
+}
+
+#locateus .packaging #fafa{
+  font-family:Neo sans;
+  color: rgb(136, 5, 5);
+ 
+}
+
+#locateus .packaging1{
+  display: none;
+}
+
+#locateus .specs{
+  grid-column: 7/10 ;
+  font-size: larger;
+  line-height: 40px;
+  letter-spacing: 1px;
+  padding-left: 90px;
+}
+
+#locateus .specs h3{
+  font-weight: 820;
+}
+
+.specs .chip {
+  display: inline-block;
+  padding: 0px 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #9aa7ac;
+  
+  
+}
+
+.specs .chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+h5{
+  font-size: larger;
+}
+#locateus #fafa{
+  font-family:Neo sans;
+  color: rgb(136, 5, 5);
+ 
+}
+
+#media{
+  height: 35%;
+}
+
+#media div img{
+  max-width: 300px;
+  max-height: 400px;
+  padding-top: 50px;
+  padding-left: 40px;
+  
+}
+
+
+
+.footer{
+  display: grid;
+  padding-left: 20px;
+  max-width: 100%;
+  font-size: large;
+  letter-spacing: 2px;
+}
+
+.footer .contact{
+  
+  width: 100%;
+  line-height: 40px;
+  display: contents;
+
+}
+
+.footer #faf{
+  font-family:Neo sans;
+  color: rgb(136, 5, 5);
+  width: 100%;
+  font-weight: 720;
+  grid-column: 1/10;
+  line-height: 1px;
+  padding: 0px 0px;
+  
+}
+
+.footer #part{
+  grid-column: 1/6;
+  font-family: Neo sans;
+  width: 100%;
+  font-size: large;
+}
+
+.footer .certification{
+  grid-column: 9/10;
+  font-family:Neo sans ;
+  color: rgb(136, 5, 5);
+  padding-left: 10px;
+  padding-right: 60px;
+}
+
+.mail h3{
+  padding-left: 100px;
+  color:rgb(136, 5, 5); 
+  font-weight: 460;
+}
+
+.mail a{
+  grid-column: 7/8;
+  color: black;
+  padding-left: 100px;
+  line-height: 40px;
+  width: 60%;
+}
+.footer .copyright{
+  grid-column: 1/10;
+  
+}
+
+}
